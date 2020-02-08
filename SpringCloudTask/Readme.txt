@@ -1,0 +1,1 @@
+Spring Cloud Task allows a user to develop and run short lived microservices using Spring Cloud and run them locally, in the cloud, even on Spring Cloud Data Flow. Just add @EnableTask and run your app as a Spring Boot app (single application context). 
