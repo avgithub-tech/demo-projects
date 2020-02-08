@@ -10,3 +10,14 @@
 - It helps removing tight coupling with any messaging service
 
 - We only need to add messaging queue'e binder dependencies
+
+-------------------------------------------------------------------------------------------
+
+spring-cloud-stream-producer
+    - cloud stream
+    - kakfka
+    - web
+
+spring-cloud-stream-consumer
+    - cloud stream
+    - kafka
