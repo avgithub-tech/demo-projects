@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  rabbitmq:
+    broker:
+      url: tcp://127.0.0.1:5672
+
+    username: guest
+    password: guest
+
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: employee-stream
