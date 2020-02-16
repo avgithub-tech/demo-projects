@@ -12,7 +12,7 @@
 - We only need to add messaging queue'e binder dependencies
 
 -------------------------------------------------------------------------------------------
-
+For Kafka:
 spring-cloud-stream-producer
     - cloud stream
     - kakfka
@@ -21,8 +21,18 @@ spring-cloud-stream-producer
 spring-cloud-stream-consumer
     - cloud stream
     - kafka
+    
+For RabbitMq:
+spring-cloud-stream-producer
+    - cloud stream
+    - Rabbitmq
+    - web
+
+spring-cloud-stream-consumer
+    - cloud stream
+    - Rabbitmq
 --------------------------------------------------------------------------------------------
-Steps to run:
+Steps to run (Kafka):
 1. Start zookeeper server
 
 2. Start kafka server
@@ -32,6 +42,19 @@ Steps to run:
 4. Run spring-cloud-stream-producer
 
 5. Run spring-cloud-stream-consumer
+
+6. Using postman, post an employee object to producer
+
+7. Check consumer log, it should have recived the same object
+--------------------------------------------------------------------------------------------
+Steps to run (RabbitMq):
+1. Start rabbitmq server
+
+4. Run spring-cloud-stream-producer
+
+5. Run spring-cloud-stream-consumer
+
+6. Check RabbitMq manager, there will be an exchange employee-stream and an queue on it with 1 consumer
 
 6. Using postman, post an employee object to producer
 
